@@ -1,0 +1,25 @@
+<div class="modal" [class.modal_show]="isShow$ | async">
+      <form (ngSubmit)="submitHandler()" [formGroup]="form!" >
+        <label htmlFor='title'> Add new ToDo</label>
+        <input
+          type='text'
+          id='title'
+          name='title'
+        />
+<!--          value={title}-->
+<!--          className='title-input'-->
+<!--          onChange={changeInputTitleHandler}-->
+        <input
+          id='date'
+          type='date'
+          class='date-input'
+        />
+<!--          defaultValue={getToday()}-->
+<!--          onChange={changeInputDateHandler}-->
+        <div class='btns-block'>
+          <button type="submit">
+            <i class='material-icons'>done</i>
+          </button>
+        </div>
+      </form>
+    </div>

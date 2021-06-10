@@ -1,0 +1,25 @@
+<div class="today">
+
+  <div class="todo-list">
+    <div class='todo-item' *ngFor="let todoItem of todoList">
+      <label>
+        <input
+          class='todo-marker'
+          type='checkbox'
+        />
+<!--          checked={todo.completed}-->
+<!--          onChange={completeHandler}      -->
+        <span class="todo-title">{{todoItem.title}}</span>
+      </label>
+
+      <span class='todo-date' >
+        {{todoItem.date | date :"dd.MM.YYYY"}}
+      </span>
+
+<!--      <i onClick={removeHandler} class='material-icons'>-->
+<!--        clear-->
+<!--      </i>-->
+    </div>
+  </div>
+
+</div>
